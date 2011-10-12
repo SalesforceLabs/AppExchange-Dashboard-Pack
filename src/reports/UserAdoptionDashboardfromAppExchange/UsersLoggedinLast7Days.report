@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <columns>
+        <field>LOGIN_DATETIME</field>
+    </columns>
+    <description>Displays all users who have logged in over the past 7 days</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERNAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Users Logged in Last 7 Days</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>false</showDetails>
+    <sortColumn>LAST_LOGIN</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LOGIN_DATETIME</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

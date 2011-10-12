@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#DDDDDD</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <componentType>Gauge</componentType>
+            <footer>Target 18,5M, stretch target 24M</footer>
+            <gaugeMax>2.4E7</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Closed Sales YTD</header>
+            <indicatorBreakpoint1>1.4E7</indicatorBreakpoint1>
+            <indicatorBreakpoint2>1.85E7</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SalesKPIDashboard/ClosedSalesYTD</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+            <title>YTD Sales</title>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Closed Sales by Industry</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/ClosedSalesbyMonthandIndustry</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>No activity last 30 days</footer>
+            <header>Neglected Opportunities</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SalesKPIDashboard/NeglectedOpportunities</report>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnGrouped</componentType>
+            <displayUnits>Thousands</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Closed Sales by Month</footer>
+            <header>Current FY vs last FY</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/Thisvslastyearclosedbusiness</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Win / Loss</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/WinLossRatio</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <footer>Number of opportunities, closed current FY</footer>
+            <indicatorBreakpoint1>50.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>75.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Win Percentage in %</metricLabel>
+            <report>SalesKPIDashboard/WinLossRatioonelinereport</report>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <componentType>Gauge</componentType>
+            <footer>Target 4.225M, Stretch target 5M</footer>
+            <gaugeMax>5000000.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Closed Sales QTD</header>
+            <indicatorBreakpoint1>3500000.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>4225000.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SalesKPIDashboard/ClosedSalesQTD</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+            <title>Sales QTD</title>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>All open opportunities</footer>
+            <header>New Business Pipeline</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/NewBusinessPipeline</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>Closing this FY, by value</footer>
+            <header>Top 10 Partner Opportunities</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SalesKPIDashboard/NewPartnerOpportunities</report>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>LineGrouped</componentType>
+            <displayUnits>Thousands</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Closed YTD</footer>
+            <header>Existing vs New Customer Revenue</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/Splitexistingvsnewcustomer</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Lead Status</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/Openvsworkingleads</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Thousands</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Sales by Country YTD</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/ClosedSalesbyCountry</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>&gt;400K  + &lt; 90 days</footer>
+            <header>Key Opportunities (Pipeline)</header>
+            <indicatorBreakpoint1>300000.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>800000.0</indicatorBreakpoint2>
+            <indicatorHighColor>#C28B54</indicatorHighColor>
+            <indicatorLowColor>#FFFFFF</indicatorLowColor>
+            <indicatorMiddleColor>#799C54</indicatorMiddleColor>
+            <report>SalesKPIDashboard/Topopenopportunities</report>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Closed revenue by month</footer>
+            <header>Top 5 Sales Reps</header>
+            <legendPosition>Bottom</legendPosition>
+            <maxValuesDisplayed>5</maxValuesDisplayed>
+            <report>SalesKPIDashboard/SalesByRep</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Total in pipeline current FY</footer>
+            <header>Opportunities by Reps</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SalesKPIDashboard/OppsbyReps</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <header>Lead Source</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SalesKPIDashboard/LeadSources</report>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+    </rightSection>
+    <runningUser>knakajima@appex-dashboard-pack.labs</runningUser>
+    <textColor>#000000</textColor>
+    <title>4-Sales KPI</title>
+    <titleColor>#000099</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

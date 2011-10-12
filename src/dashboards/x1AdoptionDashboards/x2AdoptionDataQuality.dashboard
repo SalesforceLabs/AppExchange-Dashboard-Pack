@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#DDDDDD</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Are opportunities accurate? Will assist in alerting an issue with pipeline management.</footer>
+            <header>Opportunities - Close Date in the Past</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/DataQualityCloseDateinthePast</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Close Date Last 60 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in showing if users are filling in quality fields such as Rating a lead. This shows higher success winning opportunities when Leads are rated.</footer>
+            <header>Lead Rating on Converted Leads</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/DataQualityLeadConversion</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title># Opportunities Won or Lost</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in identifying when late stage opportunities are entered.</footer>
+            <header>What Stages are Opportunities Entered?</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/DataQualityStagesOpptyEntered</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Previous FQ</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total # Accounts</metricLabel>
+            <report>DashboardReportsAdoption/TotalAccounts</report>
+        </components>
+        <components>
+            <componentType>Gauge</componentType>
+            <footer>Will assist in reflecting how much Account data is populated with key fields. If the number is low, may need to remind users which fields are important. Update the gauge settings to reflect your own!</footer>
+            <gaugeMax>83.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Accounts with all Key Fields Populated</header>
+            <indicatorBreakpoint1>20.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>40.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>DashboardReportsAdoption/DataQualityAccountswithKeyFields</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in identifying who are not following the right process for entering opportunities.</footer>
+            <header>Opportunities NOT Associated to Account</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/DataQualityOpportunitiesNoAccount</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Next FQ</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Are you capturing fields that benefit your organization? Will assist in identifying missing key data fields based on specific criteria being met.</footer>
+            <header>Prospect Accounts Missing # Employees</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/DataQualityConditionalonType</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>by Owner Role</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Do you rate your account? Will assist in identifying which accounts don&apos;t have key pieces of data, such as Rating.</footer>
+            <header>Accounts Missing Rating</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/DataQualityAccountsmissingRating</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>by Owner Role</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>knakajima@appex-dashboard-pack.labs</runningUser>
+    <textColor>#000000</textColor>
+    <title>2-Adoption Data Quality</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

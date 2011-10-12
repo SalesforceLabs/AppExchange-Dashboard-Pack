@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <componentType>Gauge</componentType>
+            <gaugeMax>500.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Lead Generation</header>
+            <indicatorBreakpoint1>100.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>200.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>CampaignDashboards/Allcampaignleadsthismonth</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+            <title>All Campaign leads generated this month</title>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Leadsbyleadsource</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Leads by lead source</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>LineGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Campaignleadsgeneratedpermonth</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Count of campaign leads per month</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Campaignleadsbyindustry</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>All campaign leads by industry</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>LineGroupedCumulative</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Lists all leads created in a cumulative format</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Leadscreatedpercalendaryear</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Leads created per calendar year</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Campaign revenue figures</header>
+            <legendPosition>Bottom</legendPosition>
+            <maxValuesDisplayed>5</maxValuesDisplayed>
+            <report>CampaignDashboards/Top5campaignsbyrevenue</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Top 5 campaigns by revenue</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <indicatorBreakpoint1>10000.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>50000.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>CampaignDashboards/PipelinegeneratedbycampaignsthisFY</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Pipeline generated this year by Campaign</title>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>Lists the % of leads converted into opportunities by each salesforce user</footer>
+            <indicatorBreakpoint1>0.1</indicatorBreakpoint1>
+            <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>CampaignDashboards/leadconversionratiobyuser</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Lead conversion ratio by user</title>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Shows the value of opportunities generated by campaigns per month</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Convertedleadsvaluethisyear</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Converted leads opportunity value</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>This list how many leads became opportunities per month</footer>
+            <indicatorBreakpoint1>5.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>CampaignDashboards/leadsconvertedintoopportspermonth</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Leads converted into opportunities</title>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Lists return on investment by type of campaign ran</footer>
+            <header>Marketing Spend Optomisation</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/CampaignROIbytype</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>ROI by Campaign Type</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Listed % of closed won opportunities per active campaign</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Winbycampaign</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Opportunity win rate % by campaign</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>This list the top ten closed wonopportunities generated from all campaigns</footer>
+            <indicatorBreakpoint1>10000.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>50000.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>CampaignDashboards/Toptencaompaignopportunities</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Top ten closed opportunities (By value)</title>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>This component list all campaign responses by type</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>CampaignDashboards/Campaignresponsesbytype</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Campaign responses by type</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>knakajima@appex-dashboard-pack.labs</runningUser>
+    <textColor>#000000</textColor>
+    <title>1-Campaign Metrics Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

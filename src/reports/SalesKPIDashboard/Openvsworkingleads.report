@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#CCCCFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>STATUS</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Overview on how my lead pipeline is managed</description>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>,Open - Not Contacted,Working - Contacted</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Open vs working leads</name>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#DDDDDD</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <componentType>Gauge</componentType>
+            <footer>How many users are logging in against # of active users in the last 7 days?</footer>
+            <gaugeMax>82.0</gaugeMax>
+            <gaugeMin>1.0</gaugeMin>
+            <header>User Login</header>
+            <indicatorBreakpoint1>21.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>41.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>DashboardReportsAdoption/UsageUsersLoggedIn</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>false</showValues>
+            <title>Last 7 Days</title>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>All Active Users</metricLabel>
+            <report>DashboardReportsAdoption/UsageTotalActiveUsers</report>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will show which regions/roles are logging in consistently and who are not.</footer>
+            <header>Login by Role</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageLoginbyRolebyMonth</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Previous FQ</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>Learning who is logging in every week is a basic level of measurement. It can also motivate others to log in more frequently if made public.</footer>
+            <header>Login Leader Board</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>DashboardReportsAdoption/UsageLoginLeaderBoard</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 7 Days</title>
+        </components>
+        <components>
+            <componentType>Table</componentType>
+            <footer>Which role has not logged in for the last 7 days? Change by username and quickly learn which who is not complying.</footer>
+            <header>Login Wall of Shame</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>DashboardReportsAdoption/UsageWallofShame</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 7 Days</title>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>LineGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Which region or team are creating new accounts to manage? Volume is an on-going indicator of adoption.</footer>
+            <header># Accounts Created</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageAccountsCreated</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 120 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total # Accounts Created</metricLabel>
+            <report>DashboardReportsAdoption/UsageAccountsCreated</report>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total # Activities Completed</metricLabel>
+            <report>DashboardReportsAdoption/UsageActivitiesCompleted</report>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Are users actively managing their activies? How will you learn about your customer interactions if they are not?</footer>
+            <header># Activities Completed</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageActivitiesCompleted</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 120 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Are users updating their accounts and adding value to the data? Could be an indication that more valuable needs are necessary.</footer>
+            <header>Accounts Last Modified</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageAccountsLastModified</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 120 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>What areas are creating tasks but not closing them? An indicator of not using the application correctly.</footer>
+            <header>Open Tasks by Role</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageOpenTasksbyAssignedRole</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Previous FQ</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>LineGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Which region or team are not creating many opportunities? Or not being consistent? Could be an indicator of training or sponsorship issues.</footer>
+            <header># Opportunities Created</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageOpptyCreated</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 120 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total # Opportunities Created</metricLabel>
+            <report>DashboardReportsAdoption/UsageOpptyCreated</report>
+        </components>
+        <components>
+            <componentType>Metric</componentType>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total # Contacts Created</metricLabel>
+            <report>DashboardReportsAdoption/UsageContactsCreated</report>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Basic level of adoption, are they creating records?</footer>
+            <header># Contacts Created</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageContactsCreated</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Last 120 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Are users actively updating their data?</footer>
+            <header>Neglected Opportunities by Rep</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/UsageNeglectedOpportunities</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>More than 30 Days since Last Modified</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>knakajima@appex-dashboard-pack.labs</runningUser>
+    <textColor>#000000</textColor>
+    <title>1-Adoption Usage</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

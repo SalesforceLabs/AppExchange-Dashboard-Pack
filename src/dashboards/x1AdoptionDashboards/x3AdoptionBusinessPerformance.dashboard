@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in who is performing and understand who is managing their region/business in the application. Are reps driving the pipeline within the app? May need to zero in on sponsorship issues.</footer>
+            <header>Pipeline by Rep</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/PerformancePipelinebyRep</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Current and Next FQ</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>LineGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in gaining insight into performance patterns. You can correlate dashboard components to look for patterns which help you learn if your users are in fact productive and growing the business.</footer>
+            <header>Monthly Sales Trend</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/PerformanceMonthlyTrendStacked</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Previous FQ</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in measuring whether reps have had enough face time with their customers. Are they using their time effectively/productively against the right type of activities? Is it contributing to their pipeline?</footer>
+            <header>Activity Type by Rep</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/PerformanceActivityTypebyRep</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Last 90 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in identifying which region is following the business process of converting leads or closing them.</footer>
+            <header>Leads Status:  Working - Contacted</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/PerformanceOpenLeadsNotContacted</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Not Modifed in 30 Days</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Will assist in identifying who are not following up on leads and performing. There could be training issues or bandwidth challenges that need to be reviewed.</footer>
+            <header>Leads Not Contacted</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>DashboardReportsAdoption/PerformanceOpenLeads</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Previous FY</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <componentType>Table</componentType>
+            <footer>Will assist in giving insight in overall performance and adoption across the company.</footer>
+            <header>Win Ratio</header>
+            <indicatorBreakpoint1>50.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>75.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>DashboardReportsAdoption/PerformanceWinRate</report>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current and Previous FY</title>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>What type of deals are reps closing? Are they bringing in new customers or spending more time on upgrades?</footer>
+            <header>What Deal Types are Reps Close Winning?</header>
+            <legendPosition>Bottom</legendPosition>
+            <maxValuesDisplayed>10</maxValuesDisplayed>
+            <report>DashboardReportsAdoption/PerformanceOpportunityTypeWon</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Current and Previous FY</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>What types of deals are reps losing? Are they spending more time selling to existing customers vs. bringing in new customers?</footer>
+            <header>What Deal Types are Reps Losing?</header>
+            <legendPosition>Bottom</legendPosition>
+            <maxValuesDisplayed>10</maxValuesDisplayed>
+            <report>DashboardReportsAdoption/PerformanceOpportunityTypeLost</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Current and Previous FY</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>knakajima@appex-dashboard-pack.labs</runningUser>
+    <textColor>#000000</textColor>
+    <title>3-Adoption Business Performance</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

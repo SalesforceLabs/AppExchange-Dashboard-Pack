@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SHORT_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>CREATEDDATE</field>
+    </columns>
+    <columns>
+        <field>LASTMODIFIED</field>
+    </columns>
+    <columns>
+        <field>LASTMODIFIEDDATE</field>
+    </columns>
+    <columns>
+        <field>LASTRUNDATE</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FOLDER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>INSIDE: # of Reports by Folder</name>
+    <reportType>ReportList</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATEDDATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

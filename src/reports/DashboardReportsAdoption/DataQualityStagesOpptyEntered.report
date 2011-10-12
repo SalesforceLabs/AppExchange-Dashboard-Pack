@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>FROM_OPPORTUNITY_STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_NAME</field>
+    </columns>
+    <columns>
+        <field>TO_CATEGORY</field>
+    </columns>
+    <currency>USD</currency>
+    <description>What stages are opportunities entered?</description>
+    <filter>
+        <criteriaItems>
+            <column>FROM_OPPORTUNITY_STAGE_NAME</column>
+            <operator>equals</operator>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Data Quality - Stages Oppty Entered</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <reportType>OpportunityHistory</reportType>
+    <scope>all</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>LAST_UPDATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>OPP_CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURPREV1</interval>
+    </timeFrameFilter>
+</Report>
